@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap');
+
 h1, h2, p{
     margin: 0;
 }
@@ -6,6 +8,7 @@ h1, h2, p{
     min-width: 375px;
     color: #090909;
     background-color: #fff;
+    font-family: 'Rubik', sans-serif;
     font-size: 18px;
     line-height: 22px;
 }
@@ -49,7 +52,7 @@ h1, h2, p{
 .intro__lang{
     text-decoration: none;
     font-size: 16px;
-    font-weight: 20px;
+    line-height: 20px;
     font-weight: bold;
     color: black;
 }
