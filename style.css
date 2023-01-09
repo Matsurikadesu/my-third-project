@@ -4,6 +4,11 @@ h1, h2, p{
     margin: 0;
 }
 
+a:hover{
+    transition: 0.5s;
+    color: #000 !important;
+}
+
 .body{
     min-width: 375px;
     color: #090909;
@@ -157,9 +162,10 @@ h1, h2, p{
     }
 
     .intro__lang-choice{
-        display: block;
-        height: 0;
-        align-self: center;
+        display: flex;
+        height: 74px;
+        margin: auto 0;
+        align-items: flex-end;
         transform: rotate(-90deg);
     }
 
