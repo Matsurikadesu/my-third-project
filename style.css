@@ -73,9 +73,9 @@ a:hover{
     position: absolute;
     background-color: black;
     width: 2px;
-    height: 15px;
-    right: -5px;
-    top: 2px;
+    height: 13.5px;
+    right: -6px;
+    top: 4px;
 }
 
 .intro__lang-choice{
@@ -163,7 +163,7 @@ a:hover{
 
     .intro__lang-choice{
         display: flex;
-        height: 74px;
+        height: 70px;
         margin: auto 0;
         align-items: flex-end;
         transform: rotate(-90deg);
