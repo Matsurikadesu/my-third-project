@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap');
-
 h1, h2, p{
     margin: 0;
 }
@@ -11,11 +9,17 @@ a:hover{
 
 .body{
     min-width: 375px;
+    max-width: 1445px;
     color: #090909;
     background-color: #fff;
     font-family: 'Rubik', sans-serif;
+    margin: 0 auto;
     font-size: 18px;
     line-height: 22px;
+}
+
+.main{
+    position: relative;
 }
 
 .intro{
@@ -40,14 +44,29 @@ a:hover{
     margin-bottom: 37px;
 }
 
-.intro__menu{
+.intro__menu-container{
     position: absolute;
+    cursor: pointer;
     right: 8%;
     top: 75px;
+    height: 20px;
+}
+
+.intro__menu{
     width: 33px;
     height: 4px;
     background-color: #000;
     box-shadow: 0 8px 0 0 #000, 0 16px 0 0 #000;
+}
+
+.nav-item{
+    text-decoration: none;
+    font-weight: bold;
+    color: #828282;
+}
+
+.nav-item:first-child{
+    color: #070707;
 }
 
 .intro__image{
@@ -68,14 +87,11 @@ a:hover{
     margin-right: 10px;
 }
 
-.intro__lang:first-child::after{
-    content: "";
-    position: absolute;
-    background-color: black;
-    width: 2px;
-    height: 13.5px;
-    right: -6px;
-    top: 4px;
+.intro .intro__lang-span{
+    font-size: i6px;
+    line-height: 16px;
+    transform: translateY(1px) translateX(-4px);
+    font-weight: bold;
 }
 
 .intro__lang-choice{
@@ -89,6 +105,7 @@ a:hover{
 .intro__image:first-of-type{
     display: none;
 }
+
 @media screen and (min-width: 700px) {
     .intro__image:first-of-type{
         display: block;
@@ -109,12 +126,17 @@ a:hover{
         margin: 0 auto;
     }
 
+    .intro__menu-container{
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+    }
+
     .intro__menu{
         width: 100%;
         height: auto;
-        position: relative;
-        top: 0;
-        left: 0;
         background-color: transparent;
         box-shadow: none;
         margin-bottom: 72px;
@@ -134,16 +156,6 @@ a:hover{
         list-style: none;
         display: flex;
         justify-content: space-between;
-    }
-
-    .nav-item a{
-        text-decoration: none;
-        font-weight: bold;
-        color: #828282;
-    }
-
-    .nav-item:first-child a{
-        color: black;
     }
 
     .intro__container{
@@ -417,4 +429,77 @@ a:hover{
         width: 180px;
         margin-bottom: 85px;
     }
+}
+
+.popup{
+    position: absolute;
+    transition: all .5s;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 0px 5px 1px gray;
+    background-color: white;
+    width: 375px;
+    top: 0;
+    right: 0;
+}
+
+.popup__nav-bar{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    list-style: none;
+    font-size: 34px;
+    line-height: 42px;
+    gap: 65px;
+    padding-left: 25px;
+    margin: 0;
+    margin-top: 55px;
+    margin-bottom: 150px;
+}
+
+.popup .intro__lang-choice{
+    display: block;
+    height: 180px;
+    transform: rotate(0);
+    text-align: right;
+}
+
+.popup .intro__lang{
+    font-size: 34px;
+    line-height: 42px;
+}
+
+.intro__lang-container{
+    display: inline-block;
+    transform: rotate(90deg) translate(50px);
+}
+
+.close-popup{
+    position: absolute;
+    cursor: pointer;
+    top: 62px;
+    right: 28px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.close-popup rect{
+    transition: fill .5s;
+}
+
+.close-popup:hover rect{
+    fill: #090909;
+}
+
+.popup .intro__lang-span{
+    display: inline-block;
+    font-size: 32px;
+    font-weight: bold; 
+    transform: translateX(-5px) translateY(3px);
+}
+
+.active{
+    visibility: visible;
+    opacity: 1;
 }

@@ -12,37 +12,29 @@
     </head>
 
     <body class="body">
-        <main>
+        <main class="main">
             <section class="intro">
-                <nav class="intro__menu">
-                    <ul class="intro__nav-bar">
-                        <li class="nav-item">
-                            <a href="#">
+                <div class="intro__menu-container">
+                    <nav class="intro__menu">
+                        <ul class="intro__nav-bar">
+                            <a class="nav-item" href="#">
                                 Home
                             </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#about">
+                            <a class="nav-item" href="#about">
                                 About me
                             </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#skills">
+                            <a class="nav-item" href="#skills">
                                 Skills
                             </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#portfolio">
+                            <a class="nav-item" href="#portfolio">
                                 Portfolio
                             </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contacts">
+                            <a class="nav-item" href="#contacts">
                                 Contacts
                             </a>
-                        </li>
-                    </ul>
-                </nav>
+                        </ul>
+                    </nav>
+                </div>
                 <div class="intro__container">
                     <h1 class="intro__header">
                         Denis <br> Novik
@@ -54,6 +46,7 @@
                         <a class="intro__lang" href="">
                             RU
                         </a>
+                        <span class="intro__lang-span"> | </span>
                         <a class="intro__lang" href="#">
                             ENG
                         </a>
@@ -173,6 +166,46 @@
                     </a>
                 </p>
             </section>
+
+            <div class="popup">
+                <ul class="popup__nav-bar">
+                    <a class="nav-item" href="#">
+                        Home
+                    </a>
+                    <a class="nav-item" href="#about">
+                        About me
+                    </a>
+                    <a class="nav-item" href="#skills">
+                        Skills
+                    </a>
+                    <a class="nav-item" href="#portfolio">
+                        Portfolio
+                    </a>
+                    <a class="nav-item" href="#contacts">
+                        Contacts
+                    </a>
+                </ul>
+
+                <div class="intro__lang-choice">
+                    <div class="intro__lang-container">
+                        <a class="intro__lang" href="">
+                            RU
+                        </a>
+                        <span class="intro__lang-span"> | </span>
+                        <a class="intro__lang" href="#">
+                            ENG
+                        </a>
+                    </div>
+                </div>
+
+                <button class="close-popup">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2.68701" width="27.3715" height="3.8" transform="rotate(45 2.68701 0)" fill="#828282"/>
+                        <rect x="0.831299" y="19.5566" width="27.3715" height="3.8" transform="rotate(-45 0.831299 19.5566)" fill="#828282"/>
+                    </svg>
+                </button>
+            </div>
         </main>
+        <script src="main.js"></script>
     </body>
 </html>
