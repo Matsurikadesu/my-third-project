@@ -4,7 +4,7 @@ The website was created to provide users with information about designer.
 
 ![Preview](./preview.gif)
 
-You can visit the website by clicking on [this link](https://pikulinweb.ru/).
+You can visit the website by clicking on [this link](https://kanae367.github.io/landing-page-template/).
 
 ## Technologies used
 
