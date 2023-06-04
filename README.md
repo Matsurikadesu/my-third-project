@@ -1,20 +1,29 @@
-![Превью сайта](./images/preview.png)
-### Шаблон Портфолио
+# Portfolio
 
-Учебный проект. Задача проекта - углубить знания адаптивной вёрстки, HTML и CSS в целом, реализовать интерактивный попап. 
+The website was created to provide users with information about designer.
 
-Проект представляет собой одностраничный лендинг-портфолио.
+![Preview](./preview.gif)
 
-Перейти на сайт можно по [ссылке](https://pikulinweb.ru/)
+You can visit the website by clicking on [this link](https://pikulinweb.ru/).
 
-#### Технологии использованные при разработке
+## Technologies used
 
-- HTML
-- CSS
+The project was made using the following technologies:
+- HTML5
+- CSS3
 - JS
+- Adaptive layout
+- Flex
 
-#### Установка проекта
+## How to start
 
-Чтобы запустить проект на своём компьютере, скопируйте репозиторий при помощи команды:
+Clone the repository using the following command: 
 
 `git clone https://github.com/kanae367/landing-page-template`
+
+
+
+
+
+
+
