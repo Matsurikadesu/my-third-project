@@ -16,8 +16,8 @@
             <section class="intro">
                 <div class="intro__menu-container">
                     <nav class="intro__menu">
-                        <ul class="intro__nav-bar">
-                            <a class="nav-item" href="#">
+                        <div class="intro__nav-bar">
+                            <a class="nav-item nav-item_active" href="#">
                                 Home
                             </a>
                             <a class="nav-item" href="#about">
@@ -32,7 +32,7 @@
                             <a class="nav-item" href="#contacts">
                                 Contacts
                             </a>
-                        </ul>
+                        </div>
                     </nav>
                 </div>
                 <div class="intro__container">
@@ -43,7 +43,7 @@
                         UX | UI designer <br> 24 years old, Minsk
                     </p>
                     <div class="intro__lang-choice">
-                        <a class="intro__lang" href="">
+                        <a class="intro__lang" href="#">
                             RU
                         </a>
                         <span class="intro__lang-span"> | </span>
@@ -54,7 +54,7 @@
                 </div>
                 <img class="intro__image" src="images/intro-photo.webp" alt="Denis Novik">
                 <img class="intro__image" src="images/intro-photo-m.webp" alt="Denis Novik">
-            </section>
+        </section>
 
             <section id="about" class="about">
                 <h2 class="about__header">
@@ -114,24 +114,24 @@
                 <h2 class="portfolio__header">
                     Portfolio
                 </h2>
-                <article class="portfolio__item">
+                <div class="portfolio__item">
                     <img class="portfolio__item-image" src="images/fashion.webp" alt="fashion homepage">
                     <a class="portfolio__item-link" href="#">
                         Online fashion store - Homepage
                     </a>
-                </article>
-                <article class="portfolio__item">
+                </div>
+                <div class="portfolio__item">
                     <img class="portfolio__item-image" src="images/reebok.webp" alt="reebok concept">
                     <a class="portfolio__item-link" href="#">
                         Reebok store - Concept
                     </a>
-                </article>
-                <article class="portfolio__item">
+                </div>
+                <div class="portfolio__item">
                     <img class="portfolio__item-image" src="images/braun.webp" alt="braun concept">
                     <a class="portfolio__item-link" href="#">
                         Braun Landing Page - Concept
                     </a>
-                </article>
+                </div>
             </section>
 
             <section id="contacts" class="contacts">
@@ -168,8 +168,8 @@
             </section>
 
             <div class="popup">
-                <ul class="popup__nav-bar">
-                    <a class="nav-item" href="#">
+                <div class="popup__nav-bar">
+                    <a class="nav-item nav-item_active" href="#">
                         Home
                     </a>
                     <a class="nav-item" href="#about">
@@ -184,7 +184,7 @@
                     <a class="nav-item" href="#contacts">
                         Contacts
                     </a>
-                </ul>
+                </div>
 
                 <div class="intro__lang-choice">
                     <div class="intro__lang-container">
@@ -199,10 +199,7 @@
                 </div>
 
                 <button class="close-popup-btn">
-                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="2.68701" width="27.3715" height="3.8" transform="rotate(45 2.68701 0)" fill="#828282"/>
-                        <rect x="0.831299" y="19.5566" width="27.3715" height="3.8" transform="rotate(-45 0.831299 19.5566)" fill="#828282"/>
-                    </svg>
+                    <img src="images/close-btn.svg" alt="Cross">
                 </button>
             </div>
         </main>

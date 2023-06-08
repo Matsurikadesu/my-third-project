@@ -2,10 +2,6 @@
     --text-light: #828282;
 }
 
-h1, h2, p{
-    margin: 0;
-}
-
 a{
     transition: 0.5s;
     text-decoration: none;
@@ -67,7 +63,7 @@ a:hover{
     color: var(--text-light);
 }
 
-.nav-item:first-child{
+.nav-item_active{
     color: #070707;
 }
 
@@ -110,7 +106,6 @@ a:hover{
 @media screen and (min-width: 700px) {
     .intro__image:first-of-type{
         display: block;
-        width: 92%;
     }
 
     .intro__image:last-of-type{
@@ -333,6 +328,11 @@ a:hover{
 .portfolio__item-link{
     position: relative;
     color: #000;
+    cursor: pointer;
+}
+
+.portfolio__item-link:hover{
+    opacity: .6;
 }
 
 .portfolio__item-link::after{
@@ -387,6 +387,7 @@ a:hover{
     width: 316px;
     height: 42px;
     margin-bottom: 48px;
+    border: none;
     transition: background-color .3s linear;
 }
 
@@ -405,6 +406,12 @@ a:hover{
 .contacts__icon{
     width: 40px;
     height: 40px;
+}
+.contacts__icons a{
+    transition: all .4s;
+}
+.contacts__icons a:hover{
+    opacity: .6;
 }
 
 .contacts__links{
